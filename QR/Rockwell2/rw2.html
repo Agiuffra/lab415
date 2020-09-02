@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 415</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/save.js"></script>
+</head>
+
+<body>
+    <!-- inicio de la cabecera -->
+    <div class="cabeza-img">
+        <img src="../../UTEC.png" alt="UTEC-LOGO" width="85px" height="100px">
+        <img src="../../EL-LOGO.png" alt="EL-LOGO" width="100px" height="100px">
+    </div>
+    <div class="cabeza">
+        <a id="lins" href="../../index.html"> Inicio </a>
+        <a id="lins" href="../../maquina.html"> Módulos </a>
+        <a id="lins" href="../../login.php"> Ingreso </a>
+    </div>
+    <!-- fin de la cabecera -->
+
+    <h2 id="headRep">Reportar Falla</h2>
+    <p id="descRep">En esta sección, te damos la opción de reportar alguna falla que hayas visto en alguno de los Módulos dentro del laboratorio</p>
+    <!-- inicio del formulario -->
+    <fieldset id="cuadro">    
+        <form id="formula" method="POST" action="../action.php"><!-- action="/action_page.php" -->
+            <!-- pregunta por el módulo -->
+            Planta:<br>
+            <input type="text" name="modulo" id="modulo" value="ROCKWELL2" readonly="readonly"/>
+            <br>
+            <!-- pregunta por el flujometro del módulo -->
+            Equipo: <br>
+            <select name="fluj1" id="fluj" style="display: block;" onchange="display6(this.value)">
+                <option value="none">-elija el equipo-</option>
+                <option value="FT10">FT10</option>
+                <option value="FT11">FT11</option>
+                <option value="PT10">PT10</option>
+                <option value="PT11">PT11</option>
+                <option value="PT20">PT20</option>
+                <option value="TT10">TT10</option>
+                <option value="TT20">TT20</option>
+                <option value="HL20">HL20</option>
+                <option value="LL20">LL20</option>
+                <option value="FV10">FV10</option>
+                <option value="FV11">FV11</option>
+                <option value="DV10">DV10</option>
+                <option value="DV20">DV20</option>
+                <option value="DV30">DV30</option>
+                <option value="PW10">PW10</option>
+                <option value="PW20">PW20</option>
+                <option value="otro">otro</option>
+            </select>
+            <div class = "otro" id="otro" style="display: none;">
+                <input type="text" id="otros" name="otros" placeholder="FIT10, flujometro...">
+            </div>
+            <!-- pide descripción de la falla -->
+            Falla:<br>
+            <TEXTarea name="falla" rows="10" cols="30" placeholder="describa la falla junto con el equipo (DIV10)"></TEXTarea>
+            <br>
+            <!-- pide una foto -->
+            Foto:<br>  
+            <input type="file" id="foto" name="foto">
+            <br>
+            <!-- pregunta por el correo -->
+            Nombre: <br>
+            <input type="text" id="prof" name="prof">
+            <br>
+            <!-- pregunta si desea ser notificado cuando el módulo sea reparado -->
+            ¿Quisieras recibir una notificación cuando el módulo sea reparado?<br>
+            <input type="radio" id="si" name="notif" value="si" onclick="display3()">
+            <label for="si">Si</label>
+            <input type="radio" id="no" name="notif" value="no" onclick="display3inv()">
+            <label for="no">No</label>
+            <br>
+            <div class = mail id="mail">
+                ingrese su correo electrónico:
+                <input type="text" id="correo" name="correo">
+            </div>
+            <br>
+            <br>
+            <!-- boton de enviar -->
+            <button id="bot" type="submit">enviar</button>
+            <label style="display: block; text-align: center; color: red;">por favor, apretar el botón una sola vez.</label>
+        </form>
+    </fieldset>
+    <p id="demo"></p>
+    <!-- fin del formulario -->
+    <hr>
+    <div>
+        <footer>
+            <p>Jr. Medrano Silva 165, Barranco, Lima - Perú.</p>
+            <p>Copyright © 2020 UTEC. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+body {background: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+footer{
+    font-size: 11px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: grey;
+    text-align: center;
+}
+
+/* Inicio de cabecera */
+/*#portada{
+
+}*/
+
+.cabeza{
+    text-align: center;
+    height: fit-content;
+}
+
+.cabeza-img{
+    float: left;
+    margin: 10px 0;
+}
+
+.cabeza a{
+    margin: 45px 7%;
+    /* padding: 20px 50px; */
+    line-height: 50px;
+    width: 150px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0CBFDF;
+    border-radius: 25px;
+}
+
+/*#hd1 { 
+    background: whitesmoke;
+    list-style: none;
+    height: 100;
+}
+
+#head { 
+    display: inline;
+}
+
+#hd2 {  
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}*/
+
+
+#replins{
+    color: white;
+    background-color: #DF0C0C;
+}
+table, th, td {
+    border: 1px solid black;
+  }
+/*Fin de cabecera*/
+
+/*Inicio página index*/
+
+#portada{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#intro{
+    text-align: center;
+}
+
+#txtintro{
+    color: #777;    
+}
+
+div.lista{
+    color: #777;
+}
+
+#list1{
+    color: #0CBFDF;
+    text-decoration: none;
+}
+
+#flist1{
+    color: red;
+    text-decoration: none;
+}
+/*Fin pagina index*/
+
+/*Inicio pagina maquinas*/
+.maquina-cont h2{
+    text-align: center;
+}
+
+div.galeria {
+    margin: 75px 10%;
+    border: 1px solid #ccc;
+    width: 75%;
+  }
+  
+div.galeria:hover {
+    border: 5px solid #0CBFDF;
+  }
+  
+div.galeria img {
+    width: 100%;
+    height: auto;
+  }
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+/*Fin pagina maquinas*/
+
+/*Inicio página SIEMENS*/
+#Tit{
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+#SIEMENS{
+    margin-left: auto;
+    margin-right: auto; 
+    display: block;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+}
+/*
+div.mod1-info{
+    border: 2px solid #0CBFDF;
+    text-align: center;
+    background-color: #0CBFDF;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+*/
+#mod-boton {
+    color: white;
+    text-decoration: none;
+    background-color: #0CBFDF;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+}
+
+div.info{
+    border: 2px solid #0CBFDF;
+    display: none;
+    text-align: center;
+}
+
+div.info2{
+    border: 2px solid #0CBFDF;
+    display: none;
+    text-align: center;
+}
+
+div.mod1-rep{
+    color: white;
+    border: 2px dashed yellow;
+    text-align: center;
+    background-color: red;
+    margin-top: 10px;
+}
+/*Fin página SIEMENS*/
+
+/*Inicio pagina de reportes*/
+#headRep{
+    text-align: center;
+}
+
+#descRep{
+    color: #777;
+}
+
+#cuadro{
+    padding-top: 10px;
+    background-color: #0CBFDF;
+    border-radius: 25px;
+    color: white;
+    border-color: transparent;
+}
+
+#bot{
+    background-color: #DF0C0C;
+    color: white;
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    border-radius: 50px;
+    border-color: transparent;
+}
+
+div.flujRW{
+    display: none;
+}
+
+div.flujS{
+    display: none;
+}
+
+div.flujC{
+    display: none;
+}
+
+div.mail{
+    display: none;
+}
+/*Fin pagina de reportes*/

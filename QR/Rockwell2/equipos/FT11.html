@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 415</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/save.js"></script>
+</head>
+
+<body>
+    <!-- inicio de la cabecera -->
+    <ul id="hd1">
+        <img src="../../UTEC.png" alt="UTEC-LOGO" width="85px" height="100px">
+        <img src="../../EL-LOGO.png" alt="EL-LOGO" width="100px" height="100px">
+        <li id="head"><a id="lins" href="../../index.html"> Inicio </a></li>
+        <li id="head"><a id="lins" href="../../maquina.html"> Módulos </a></li>
+        <li id="head"><a id="lins" href="../../encargado.html"> Encargados </a></li>
+        <li id="head"><a id="lins" href=""> Historial de Fallas </a></li>
+    </ul>
+    <!-- fin de la cabecera -->
+
+    <h2 id="headRep">Reportar Falla</h2>
+    <p id="descRep">En esta sección, te damos la opción de reportar alguna falla que hayas visto en alguno de los Módulos dentro del laboratorio</p>
+    <!-- inicio del formulario -->
+    <fieldset id="cuadro">    
+        <form id="formula" method="POST" action="../action.php"><!-- action="/action_page.php" -->
+            <!-- pregunta por el módulo -->
+            Módulo:<br>
+            <input type="text" name="modulo" id="modulo" value="ROCKWELL2" readonly="readonly"/>
+            <br>
+            Conexión: <br>
+            <input type="text" name="fluj1" id="fluj" value="FT11" readonly="readonly"/>
+            <br>
+            <!-- pide descripción de la falla -->
+            Falla:<br>
+            <TEXTarea name="falla" rows="10" cols="30">describa la falla</TEXTarea>
+            <br>
+            <!-- pide una foto -->
+            Foto:<br>  
+            <input type="file" id="foto" name="foto">
+            <br>
+            <!-- pregunta por el correo -->
+            Nombre: <br>
+            <input type="text" id="prof" name="prof">
+            <br>
+            <!-- pregunta si desea ser notificado cuando el módulo sea reparado -->
+            ¿Quisieras recibir una notificación cuando el módulo sea reparado?<br>
+            <input type="radio" id="si" name="notif" value="si" onclick="display3()">
+            <label for="si">Si</label>
+            <input type="radio" id="no" name="notif" value="no" onclick="display3inv()">
+            <label for="no">No</label>
+            <br>
+            <div class = mail id="mail">
+                ingrese su correo electrónico:
+                <input type="text" id="correo" name="correo">
+            </div>
+            <br>
+            <br>
+            <!-- boton de enviar -->
+            <button id="bot" type="submit">enviar</button>
+        </form>
+    </fieldset>
+    <p id="demo"></p>
+    <!-- fin del formulario -->
+    <hr>
+    <div>
+        <footer>
+            <p>Jr. Medrano Silva 165, Barranco, Lima - Perú.</p>
+            <p>Copyright © 2020 UTEC. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
